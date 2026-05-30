@@ -27,8 +27,6 @@ contours and/or TotalSegmentator NIfTI segmentations) onto the resulting dose cu
 | `hybrid_dose_final.py` | **Standalone hybrid + phantom runner** | Self-contained, single-file version of the hybrid combination (TPS RTDOSE inside the 5 % isodose, P3D outside) for one patient DICOM folder. Used among others for the **Alderson Rando phantom film-validation** runs. Entry point: `run_hybrid_dose(data_dir, out_dir)`. |
 | `periphocal3d_dvh_ctdicom_nifti_rtdose.py` | **Periphocal3D-only calculator** | Standalone OOF dose + organ-DVH calculator using **only** the analytical P3D model (no TPS hybrid). Loads a CT DICOM series and NIfTI segmentations (per-organ masks **or** a labelmap), builds the P3D peripheral-dose cube and per-organ DVHs in DICOM LPS coordinates. This is the engine wrapped by the notebook. |
 | `periphocal3d_organ.ipynb` | **Interactive notebook** | Jupyter/Colab front-end for the P3D calculator: loads CT + segmentations, interactive isocenter placement (sliders, voxel index, or LPS mm), and exports organ doses + DVHs to CSV. |
-| `requirements.txt` | dependencies | Python package list (see below). |
-
 
 ---
 
