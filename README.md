@@ -29,8 +29,6 @@ contours and/or TotalSegmentator NIfTI segmentations) onto the resulting dose cu
 | `periphocal3d_organ.ipynb` | **Interactive notebook** | Jupyter/Colab front-end for the P3D calculator: loads CT + segmentations, interactive isocenter placement (sliders, voxel index, or LPS mm), and exports organ doses + DVHs to CSV. |
 | `requirements.txt` | dependencies | Python package list (see below). |
 
-*Optional, if you still have it:* `hybrid_dose_compare_FU.py` — a parallel run comparing the
-two field-area definitions (jaw-aperture vs 50 % isodose `F_U`) on the same plan.
 
 ---
 
